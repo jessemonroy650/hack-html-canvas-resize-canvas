@@ -1,0 +1,19 @@
+body {margin:0;padding:0;}
+* {margin:0;padding:0;}
+.height100percent {height:100%}
+.hidden {visibility:collapse;display:none;}
+.expose {visibility:visible;display:block;} /* Here for completeness only. */
+.spacer {clear:both;}
+.recordSpace {margin:0.5em;}
+
+/* header, panel buttons, titles, icons */
+.header  {width:100%;margin:0;margin-bottom:0.05em;padding:0;min-height:50px;}
+#header  {text-align:center;background: #499bea;background: linear-gradient(to bottom,  #499bea 0%,#207ce5 100%);}
+#menubar   {cursor:pointer;border:0;float:right;}
+#app_icon  {cursor:pointer;border:0;float:left;}
+#app_title {font-family:monospace;font-size:1.2em;padding:1em;}
+
+#originalImage {}
+#canvasImage   {}
+
+#status {margin:auto;width:100%;}
