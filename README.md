@@ -11,4 +11,5 @@ https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Using_image
 img.addEventListener('load', function() {
 ```
 
-I used `timeout()`
+I used `timeout()`.
+

@@ -5,13 +5,13 @@
 	<title>Hack Canvas Resize/Scale</title>
 	<meta name="viewport" content="width=device-width">
 	<!-- Resource Information -->
-	<link rel="stylesheet" type="text/css" href=index.css>
+	<link rel="stylesheet" type="text/css" href=css/app.css>
+    <!-- Javascript -->
 	<script type="text/javascript;" src="cordova.js"></script>
-	<script type="text/javascript;" src="fastclick.js"></script>
-	<script type="text/javascript;" src="zepto.js"></script>
-	<script type="text/javascript;" src="localstore.js"></script>
-	<script type="text/javascript;" src="pgResizeBase64.js"></script>
-	<script type="text/javascript;" src="app.js"></script>
+	<script type="text/javascript;" src="js/fastclick.js"></script>
+	<script type="text/javascript;" src="js/zepto.js"></script>
+	<script type="text/javascript;" src="js/pgResizeBase64.js"></script>
+	<script type="text/javascript;" src="js/app.js"></script>
   </head>
 <body>
 <center>
@@ -21,7 +21,9 @@
 		<div id=app_title>Hack Canvas Resize/Scale v<span id=version></span></div>
 	</div>
 
+    <h3>Original Image @ 200x113</h3>
     <img width=200px height=113px id=originalImage title="Dad & Benny" src=dad+benny.jpg />
+    <h3>Canvas</h3>
     <canvas id=canvasImage>This is a test.</canvas>
     <!-- <canvas width=3264px height=1840px id=canvasImage>This is a test.</canvas> -->
 
@@ -34,7 +36,6 @@
 <script type="text/javascript;">
     //
     //   Wait for everthing to load
-    //
     // The 'DOMContentLoaded' event fires before the 'deviceready'
     document.addEventListener('DOMContentLoaded', app.onDOMContentLoaded, false);
     //

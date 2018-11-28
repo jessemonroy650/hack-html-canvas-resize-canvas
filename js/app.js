@@ -12,7 +12,6 @@ var app = {
     version : '0.8.0',
     targetEvent    : 'click',
     isCordovaApp   : 'false',
-    isStorageAvailable : false,
 
     //
     //  Initialize our screen, and all libraries we used.
@@ -20,15 +19,6 @@ var app = {
     init : function () {
         $('#version').text(app.version);
         FastClick.attach(document.body);
-        //
-        // check for available storage
-        //
-        app.isStorageAvailable = localStore.isStorageAvailable('localStorage');
-        if (app.isStorageAvailable) {
-            $('#imgLocalStore').removeClass('hidden').addClass('expose');
-        } else {
-            $('#imgLocalStore').removeClass('expose').addClass('hidden');
-        }
     },
     //
     //  "hook" deals with the interactive screen, buttons and the such.
